@@ -78,13 +78,13 @@ public class OpenAiService
     /// </remarks>
     public OpenAiService(string endpoint, string key, string embeddingsDeployment, string completionsDeployment, string maxCompletionTokens, string maxConversationTokens, string maxEmbeddingTokens, ILogger logger)
     {
-        ArgumentException.ThrowIfNullOrEmpty(endpoint);
-        ArgumentException.ThrowIfNullOrEmpty(key);
-        ArgumentException.ThrowIfNullOrEmpty(embeddingsDeployment);
-        ArgumentException.ThrowIfNullOrEmpty(completionsDeployment);
-       // ArgumentException.ThrowIfNullOrEmpty(maxConversationTokens);
-        ArgumentException.ThrowIfNullOrEmpty(maxCompletionTokens);
-        ArgumentException.ThrowIfNullOrEmpty(maxEmbeddingTokens);
+        //ArgumentException.ThrowIfNullOrEmpty(endpoint);
+        //ArgumentException.ThrowIfNullOrEmpty(key);
+        //ArgumentException.ThrowIfNullOrEmpty(embeddingsDeployment);
+        //ArgumentException.ThrowIfNullOrEmpty(completionsDeployment);
+       //ArgumentException.ThrowIfNullOrEmpty(maxConversationTokens);
+        //ArgumentException.ThrowIfNullOrEmpty(maxCompletionTokens);
+        //ArgumentException.ThrowIfNullOrEmpty(maxEmbeddingTokens);
 
         _embeddingsModelOrDeployment = embeddingsDeployment;
         _completionsModelOrDeployment = completionsDeployment;
