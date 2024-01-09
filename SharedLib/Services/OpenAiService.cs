@@ -66,25 +66,15 @@ public class OpenAiService
     /// <summary>
     /// Creates a new instance of the service.
     /// </summary>
-    /// <param name="endpoint">Endpoint URI.</param>
-    /// <param name="key">Account key.</param>
-    /// <param name="embeddingsDeployment">Name of the model deployment for generating embeddings.</param>
-    /// <param name="completionsDeployment">Name of the model deployment for generating completions.</param>
-    /// <param name="maxConversationBytes">Maximum number of bytes to limit conversation history sent for a completion.</param>
-    /// <param name="logger">Logger instance.</param>
-    /// <exception cref="ArgumentNullException">Thrown when endpoint, key, deploymentName, or maxConversationBytes is either null or empty.</exception>
-    /// <remarks>
-    /// This constructor will validate credentials and create a HTTP client instance.
-    /// </remarks>
     public OpenAiService(string endpoint, string key, string embeddingsDeployment, string completionsDeployment, string maxCompletionTokens, string maxConversationTokens, string maxEmbeddingTokens, ILogger logger)
     {
-        //ArgumentException.ThrowIfNullOrEmpty(endpoint);
-        //ArgumentException.ThrowIfNullOrEmpty(key);
-        //ArgumentException.ThrowIfNullOrEmpty(embeddingsDeployment);
-        //ArgumentException.ThrowIfNullOrEmpty(completionsDeployment);
-       //ArgumentException.ThrowIfNullOrEmpty(maxConversationTokens);
-        //ArgumentException.ThrowIfNullOrEmpty(maxCompletionTokens);
-        //ArgumentException.ThrowIfNullOrEmpty(maxEmbeddingTokens);
+        ArgumentException.ThrowIfNullOrEmpty(endpoint);
+        ArgumentException.ThrowIfNullOrEmpty(key);
+        ArgumentException.ThrowIfNullOrEmpty(embeddingsDeployment);
+        ArgumentException.ThrowIfNullOrEmpty(completionsDeployment);
+        ArgumentException.ThrowIfNullOrEmpty(maxConversationTokens);
+        ArgumentException.ThrowIfNullOrEmpty(maxCompletionTokens);
+        ArgumentException.ThrowIfNullOrEmpty(maxEmbeddingTokens);
 
         _embeddingsModelOrDeployment = embeddingsDeployment;
         _completionsModelOrDeployment = completionsDeployment;
