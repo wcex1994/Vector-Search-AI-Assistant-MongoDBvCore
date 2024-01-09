@@ -85,10 +85,6 @@ var openAiSettings = {
     }
   }
 }
-<<<<<<< HEAD
-=======
-
->>>>>>> 20b416d537e6324514268a026c295d3768df0c07
 var mongovCoreSettings = {
   mongoClusterName: '${name}-mongo'
   mongoClusterLogin: mongoDbUserName
