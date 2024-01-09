@@ -82,7 +82,7 @@ public class OpenAiService
         ArgumentException.ThrowIfNullOrEmpty(key);
         ArgumentException.ThrowIfNullOrEmpty(embeddingsDeployment);
         ArgumentException.ThrowIfNullOrEmpty(completionsDeployment);
-        ArgumentException.ThrowIfNullOrEmpty(maxConversationTokens);
+       // ArgumentException.ThrowIfNullOrEmpty(maxConversationTokens);
         ArgumentException.ThrowIfNullOrEmpty(maxCompletionTokens);
         ArgumentException.ThrowIfNullOrEmpty(maxEmbeddingTokens);
 
